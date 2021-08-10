@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-10T11:14:22Z" name="Default suite" finished-at="2021-08-10T11:14:34Z" duration-ms="12189">
+    <groups>
+    </groups>
+    <test started-at="2021-08-10T11:14:22Z" name="Default test" finished-at="2021-08-10T11:14:34Z" duration-ms="12189">
+      <class name="com.Day18.SimpleFormDemo.TestNG.SimpleFormPageTest">
+        <test-method is-config="true" signature="initializeWebEnvironmentAndSetup()[pri:0, instance:com.Day18.SimpleFormDemo.TestNG.SimpleFormPageTest@506ae4d4]" started-at="2021-08-10T16:44:22Z" name="initializeWebEnvironmentAndSetup" finished-at="2021-08-10T16:44:32Z" duration-ms="9808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebEnvironmentAndSetup -->
+        <test-method signature="clickOnMunuBarOptionAndDropDownOption()[pri:1, instance:com.Day18.SimpleFormDemo.TestNG.SimpleFormPageTest@506ae4d4]" started-at="2021-08-10T16:44:32Z" name="clickOnMunuBarOptionAndDropDownOption" finished-at="2021-08-10T16:44:33Z" duration-ms="1341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnMunuBarOptionAndDropDownOption -->
+        <test-method signature="verifyHomePageOfSimpleInputForm()[pri:2, instance:com.Day18.SimpleFormDemo.TestNG.SimpleFormPageTest@506ae4d4]" started-at="2021-08-10T16:44:33Z" name="verifyHomePageOfSimpleInputForm" finished-at="2021-08-10T16:44:33Z" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageOfSimpleInputForm -->
+        <test-method signature="singleInputFieldForm()[pri:3, instance:com.Day18.SimpleFormDemo.TestNG.SimpleFormPageTest@506ae4d4]" started-at="2021-08-10T16:44:33Z" name="singleInputFieldForm" finished-at="2021-08-10T16:44:33Z" duration-ms="390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- singleInputFieldForm -->
+        <test-method signature="twoInputFieldForm()[pri:4, instance:com.Day18.SimpleFormDemo.TestNG.SimpleFormPageTest@506ae4d4]" started-at="2021-08-10T16:44:33Z" name="twoInputFieldForm" finished-at="2021-08-10T16:44:34Z" duration-ms="491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- twoInputFieldForm -->
+        <test-method is-config="true" signature="tearDownWebEnvironment()[pri:0, instance:com.Day18.SimpleFormDemo.TestNG.SimpleFormPageTest@506ae4d4]" started-at="2021-08-10T16:44:34Z" name="tearDownWebEnvironment" finished-at="2021-08-10T16:44:34Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownWebEnvironment -->
+      </class> <!-- com.Day18.SimpleFormDemo.TestNG.SimpleFormPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
