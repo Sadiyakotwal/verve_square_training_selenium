@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\HP\AppData\Local\Temp\testng-eclipse--1666052287\testng-customsuite.xml</span>
+                    <span>C:\Users\HP\AppData\Local\Temp\testng-eclipse-126765622\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest" class="method navigator-link" hash-for-method="TC_ID_08_verifyAutoCloseableInfoMessage">TC_ID_08_verifyAutoCloseableInfoMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,22 +116,37 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.Day18.SimpleFormDemo.TestNG.SimpleFormPageTest" class="method navigator-link" hash-for-method="clickOnMunuBarOptionAndDropDownOption">clickOnMunuBarOptionAndDropDownOption</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest" class="method navigator-link" hash-for-method="TC_ID_01_verifyBootstrapAlertHomePage">TC_ID_01_verifyBootstrapAlertHomePage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.Day18.SimpleFormDemo.TestNG.SimpleFormPageTest" class="method navigator-link" hash-for-method="singleInputFieldForm">singleInputFieldForm</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest" class="method navigator-link" hash-for-method="TC_ID_02_verifyAutocloseableableSuccessMessage">TC_ID_02_verifyAutocloseableableSuccessMessage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.Day18.SimpleFormDemo.TestNG.SimpleFormPageTest" class="method navigator-link" hash-for-method="twoInputFieldForm">twoInputFieldForm</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest" class="method navigator-link" hash-for-method="TC_ID_03_verifyNormalSuccessMessage">TC_ID_03_verifyNormalSuccessMessage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.Day18.SimpleFormDemo.TestNG.SimpleFormPageTest" class="method navigator-link" hash-for-method="verifyHomePageOfSimpleInputForm">verifyHomePageOfSimpleInputForm</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest" class="method navigator-link" hash-for-method="TC_ID_04_verifyAutoCloseableWarningMessage">TC_ID_04_verifyAutoCloseableWarningMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest" class="method navigator-link" hash-for-method="TC_ID_05_verifyNormalWarningMessage">TC_ID_05_verifyNormalWarningMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest" class="method navigator-link" hash-for-method="TC_ID_06_verifyAutoCloseabledangerMessage">TC_ID_06_verifyAutoCloseabledangerMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest" class="method navigator-link" hash-for-method="TC_ID_07_verifyNormaDangerMessage">TC_ID_07_verifyNormaDangerMessage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -132,38 +161,107 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.Day18.SimpleFormDemo.TestNG.SimpleFormPageTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="clickOnMunuBarOptionAndDropDownOption">
-                  </a> <!-- clickOnMunuBarOptionAndDropDownOption -->
-                  <span class="method-name">clickOnMunuBarOptionAndDropDownOption</span>
+                  <a name="TC_ID_08_verifyAutoCloseableInfoMessage">
+                  </a> <!-- TC_ID_08_verifyAutoCloseableInfoMessage -->
+                  <span class="method-name">TC_ID_08_verifyAutoCloseableInfoMessage</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.Day19.AlertsAndModals.TestNG.BootstrapAlertPage.verifyAutocloseableInfoMsgIsDisplayedOrNot(BootstrapAlertPage.java:237)
+	at com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest.TC_ID_08_verifyAutoCloseableInfoMessage(BootstrapAlertTest.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_ID_01_verifyBootstrapAlertHomePage">
+                  </a> <!-- TC_ID_01_verifyBootstrapAlertHomePage -->
+                  <span class="method-name">TC_ID_01_verifyBootstrapAlertHomePage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="singleInputFieldForm">
-                  </a> <!-- singleInputFieldForm -->
-                  <span class="method-name">singleInputFieldForm</span>
+                  <a name="TC_ID_02_verifyAutocloseableableSuccessMessage">
+                  </a> <!-- TC_ID_02_verifyAutocloseableableSuccessMessage -->
+                  <span class="method-name">TC_ID_02_verifyAutocloseableableSuccessMessage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="twoInputFieldForm">
-                  </a> <!-- twoInputFieldForm -->
-                  <span class="method-name">twoInputFieldForm</span>
+                  <a name="TC_ID_03_verifyNormalSuccessMessage">
+                  </a> <!-- TC_ID_03_verifyNormalSuccessMessage -->
+                  <span class="method-name">TC_ID_03_verifyNormalSuccessMessage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyHomePageOfSimpleInputForm">
-                  </a> <!-- verifyHomePageOfSimpleInputForm -->
-                  <span class="method-name">verifyHomePageOfSimpleInputForm</span>
+                  <a name="TC_ID_04_verifyAutoCloseableWarningMessage">
+                  </a> <!-- TC_ID_04_verifyAutoCloseableWarningMessage -->
+                  <span class="method-name">TC_ID_04_verifyAutoCloseableWarningMessage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_ID_05_verifyNormalWarningMessage">
+                  </a> <!-- TC_ID_05_verifyNormalWarningMessage -->
+                  <span class="method-name">TC_ID_05_verifyNormalWarningMessage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_ID_06_verifyAutoCloseabledangerMessage">
+                  </a> <!-- TC_ID_06_verifyAutoCloseabledangerMessage -->
+                  <span class="method-name">TC_ID_06_verifyAutoCloseabledangerMessage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_ID_07_verifyNormaDangerMessage">
+                  </a> <!-- TC_ID_07_verifyNormaDangerMessage -->
+                  <span class="method-name">TC_ID_07_verifyNormaDangerMessage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -171,7 +269,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\HP\AppData\Local\Temp\testng-eclipse--1666052287\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\HP\AppData\Local\Temp\testng-eclipse-126765622\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -180,7 +278,7 @@
 &lt;suite parallel=&quot;none&quot; name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.Day18.SimpleFormDemo.TestNG.SimpleFormPageTest&quot;/&gt;
+      &lt;class name=&quot;com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -220,28 +318,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'clickOnMunuBarOptionAndDropDownOption')
-data.setCell(0, 2, 'com.Day18.SimpleFormDemo.TestNG.SimpleFormPageTest')
-data.setCell(0, 3, 1341);
+data.setCell(0, 1, 'TC_ID_01_verifyBootstrapAlertHomePage')
+data.setCell(0, 2, 'com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest')
+data.setCell(0, 3, 5713);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'twoInputFieldForm')
-data.setCell(1, 2, 'com.Day18.SimpleFormDemo.TestNG.SimpleFormPageTest')
-data.setCell(1, 3, 491);
+data.setCell(1, 1, 'TC_ID_03_verifyNormalSuccessMessage')
+data.setCell(1, 2, 'com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest')
+data.setCell(1, 3, 189);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'singleInputFieldForm')
-data.setCell(2, 2, 'com.Day18.SimpleFormDemo.TestNG.SimpleFormPageTest')
-data.setCell(2, 3, 390);
+data.setCell(2, 1, 'TC_ID_07_verifyNormaDangerMessage')
+data.setCell(2, 2, 'com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest')
+data.setCell(2, 3, 188);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyHomePageOfSimpleInputForm')
-data.setCell(3, 2, 'com.Day18.SimpleFormDemo.TestNG.SimpleFormPageTest')
-data.setCell(3, 3, 126);
+data.setCell(3, 1, 'TC_ID_02_verifyAutocloseableableSuccessMessage')
+data.setCell(3, 2, 'com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest')
+data.setCell(3, 3, 183);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC_ID_08_verifyAutoCloseableInfoMessage')
+data.setCell(4, 2, 'com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest')
+data.setCell(4, 3, 160);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC_ID_05_verifyNormalWarningMessage')
+data.setCell(5, 2, 'com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest')
+data.setCell(5, 3, 158);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC_ID_04_verifyAutoCloseableWarningMessage')
+data.setCell(6, 2, 'com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest')
+data.setCell(6, 3, 147);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC_ID_06_verifyAutoCloseabledangerMessage')
+data.setCell(7, 2, 'com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest')
+data.setCell(7, 3, 142);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -267,31 +381,45 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.Day18.SimpleFormDemo.TestNG.SimpleFormPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="chronological-class-name">com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
                 <span class="method-name">initializeWebEnvironmentAndSetup</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">clickOnMunuBarOptionAndDropDownOption</span>
-                <span class="method-start">9816 ms</span>
+                <span class="method-name">TC_ID_01_verifyBootstrapAlertHomePage</span>
+                <span class="method-start">5939 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyHomePageOfSimpleInputForm</span>
-                <span class="method-start">11164 ms</span>
+                <span class="method-name">TC_ID_02_verifyAutocloseableableSuccessMessage</span>
+                <span class="method-start">11654 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">singleInputFieldForm</span>
-                <span class="method-start">11294 ms</span>
+                <span class="method-name">TC_ID_03_verifyNormalSuccessMessage</span>
+                <span class="method-start">11839 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">twoInputFieldForm</span>
-                <span class="method-start">11687 ms</span>
+                <span class="method-name">TC_ID_04_verifyAutoCloseableWarningMessage</span>
+                <span class="method-start">12030 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDownWebEnvironment</span>
-                <span class="method-start">12181 ms</span>
-              </div> <!-- configuration-test after -->
+              <div class="test-method">
+                <span class="method-name">TC_ID_05_verifyNormalWarningMessage</span>
+                <span class="method-start">12179 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_ID_06_verifyAutoCloseabledangerMessage</span>
+                <span class="method-start">12340 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_ID_07_verifyNormaDangerMessage</span>
+                <span class="method-start">12484 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_ID_08_verifyAutoCloseableInfoMessage</span>
+                <span class="method-start">12674 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -3,7 +3,17 @@
 <suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test" verbose="2">
     <classes>
-      <class name="com.Day18.SimpleFormDemo.TestNG.SimpleFormPageTest"/>
+      <class name="com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest"/>
     </classes>
   </test> <!-- Default test -->
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest">
+        <methods>
+          <include name="TC_ID_08_verifyAutoCloseableInfoMessage"/>
+          <include name="initializeWebEnvironmentAndSetup"/>
+        </methods>
+      </class> <!-- com.Day19.AlertsAndModals.TestNG.BootstrapAlertTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

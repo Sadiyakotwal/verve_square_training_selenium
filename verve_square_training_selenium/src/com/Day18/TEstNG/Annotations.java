@@ -42,10 +42,10 @@ public class Annotations
 	public void maximizeWindow() 
 	{
 		System.out.println("Before method:");
-		System.out.println("Login Page : 'amazon.in'\n");	
+		System.out.println("Logo Page : 'amazon.in'\n");	
 	}
 	
-	@Test
+	@Test(invocationCount = 2,priority=1)
 	public void signInToAmazonWithUsernameAndPassword() 
 	{
 		System.out.println("Test : 1");
@@ -53,13 +53,19 @@ public class Annotations
 		System.out.println("Enter password :abcxyz_123\n");
 	}
 	
-	@Test
+	@Test(priority=2)
 	public void clickOnLogout() 
 	{
 		System.out.println("Test : 2");
-		System.out.println("Logout Action are performed");
+		System.out.println("Logout Action are performed\n");
 	}
-	
+	@AfterMethod
+	public void webApplicationIsOpen() 
+	{
+		System.out.println("After Method: ");
+		System.out.println("In the web application......\n");
+		
+	}
 	
 	@AfterClass
 	public void verifyAmazonHomePageIsDisplayedOrNot() 
@@ -84,5 +90,11 @@ public class Annotations
 		System.out.println("Test report genrated.........");
 	}
 	
+	
+	public void ignoredByTestNG() 
+	{
+		System.out.println("TestNG ignores this method!!!!!");
+		
+	}
 	
 }

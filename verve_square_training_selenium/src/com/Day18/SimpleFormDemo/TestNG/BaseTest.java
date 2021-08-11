@@ -20,12 +20,9 @@ public class BaseTest
 		this.loadConfigProperties();
 		//Set system property
 		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/externalResource/chromedriver.exe");
-		//System.out.println("System Path: "+System.getProperty("user.dir")+"/externalResource/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get(objConfigProperties.getProperty("AUT_URL"));
 		System.out.println("URL to be Tested: "+objConfigProperties.getProperty("AUT_URL"));
-		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS) ;
-		driver.findElement(By.xpath("//a[@id='at-cv-lightbox-close']")).click();
 		driver.manage().window().maximize();	
 		
 	}

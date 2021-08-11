@@ -1,7 +1,10 @@
 package com.Day18.SimpleFormDemo.TestNG;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.testng.Assert;
 
 public class SimpleFormPage 
 {
@@ -10,6 +13,12 @@ public class SimpleFormPage
 	public SimpleFormPage(BaseTest  baseTest) 
 	{
 		this.objBaseTest = baseTest;
+	}
+	
+	public void managePopUP() 
+	{
+		objBaseTest.getDriver().manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS) ;
+		objBaseTest.getDriver().findElement(By.xpath("//a[@id='at-cv-lightbox-close']")).click();
 	}
 	
 	public void selectMenuBarElement(String strMenuBar) 
@@ -35,37 +44,27 @@ public class SimpleFormPage
 		
 	}
 	
-	public void verifySimpleInputFormPage() 
+	public void verifySimpleInputFormPage(String strHeaderExpected) 
 	{
-		if (objBaseTest.getDriver().findElement(By.xpath("//h3[text()='This would be your first example to start with Selenium.']")).isDisplayed()) 
-		{
-			System.out.println("Simple Form Demo Page is opened....");
-		} 
-		else 
-		{
-			System.out.println("Simple Form Demo Page is not opened!!!!!!!!");
-
-		}	
+		By simpleInputFormPageHeader = By.xpath("//h3[text()='This would be your first example to start with Selenium.']");
+		String strActualHeader = objBaseTest.getDriver().findElement(simpleInputFormPageHeader).getText();
+		Assert.assertTrue(strActualHeader.equals(strHeaderExpected));
+		System.out.println("This is simple Input form page....");
 	}
 	
-	public void verifySingleInputFieldSection() 
+	public void verifySingleInputFieldSection(String strSingleFieldHeader) 
 	{
-		if (objBaseTest.getDriver().findElement(By.xpath("//div[text()='Single Input Field']")).isDisplayed()) 
-		{
-			System.out.println("This is single input field section.....");
-		} 
-		else 
-		{
-			System.out.println("Wrong section!!!!!!!");
+		By singleInputFieldHeader = By.xpath("//div[text()='Single Input Field']");
+		String strActualText = objBaseTest.getDriver().findElement(singleInputFieldHeader).getText();
+		Assert.assertTrue(strActualText.equals(strSingleFieldHeader));
+		System.out.println("This is single input field section.....");
 
-		}	
 	}
 	
 	//To set a message
 	public void setSingleInputFieldMessage(String strMessage) 
 	{
 		objBaseTest.getDriver().findElement(By.xpath("//input[@id='user-message']")).sendKeys(strMessage);
-		
 	}
 	
 	
@@ -73,38 +72,26 @@ public class SimpleFormPage
 	public void clickShowMessageButton() 
 	{
 		objBaseTest.getDriver().findElement(By.xpath("//button[text()='Show Message']")).click();
-		
 	}
 	
 	
 	
 	public void verifyMessageEnteredInSingleInputField(String strExpectedMessage) 
 	{
-		String strActualMessage = objBaseTest.getDriver().findElement(By.xpath("//div//label[text()='Your Message: ']/following-sibling::span[@id='display']")).getText();
-		if (strExpectedMessage.equals(strActualMessage)) 
-		{
-			System.out.println("Entered message and actual shown message is same......");
-		} 
-		else 
-		{
-			System.out.println("Test failed : expected message != actual message!!!!!");
+		By singleInputFieldText = By.xpath("//div//label[text()='Your Message: ']/following-sibling::span[@id='display']");
+		String strActualText = objBaseTest.getDriver().findElement(singleInputFieldText).getText();
+		Assert.assertTrue(strActualText.equals(strExpectedMessage));
+		System.out.println("Entered message and actual shown message is same......");
 
-		}	
 	}
 	
 	
-	public void verifyTwoInputFieldsSection() 
+	public void verifyTwoInputFieldsSection(String strTwoInputFieldHeader) 
 	{
-		//this.toScrollDownPage();
-		if (objBaseTest.getDriver().findElement(By.xpath("//div[text()='Two Input Fields']")).isDisplayed()) 
-		{
-			System.out.println("This is Two input field section.....");
-		} 
-		else 
-		{
-			System.out.println("Wrong section!!!!!!!");
-
-		}	
+		By twoInputFieldHeader = By.xpath("//div[text()='Two Input Fields']");
+		String strActualText = objBaseTest.getDriver().findElement(twoInputFieldHeader).getText();
+		Assert.assertTrue(strActualText.equals(strTwoInputFieldHeader));
+		System.out.println("This is Two input field section.....");
 		
 	}
 	
@@ -132,16 +119,8 @@ public class SimpleFormPage
 		int intTotal = Integer.parseInt(strValue1)+Integer.parseInt(strValue2);
 		String strExpectedTotal = String.valueOf(intTotal);
 		String strActualTotal = this.getTotal();
-		if (strExpectedTotal.equals(strActualTotal)) 
-		{
-			System.out.println("Test passed : Actual total is equal to expected total........");
-			
-		} 
-		else 
-		{
-			System.out.println("Test Failed :  Actual total is not equal to expected total!!!!!!! ");
-		}
-		
+		Assert.assertTrue(strActualTotal.equals(strExpectedTotal));
+		System.out.println("Test passed : Actual total is equal to expected total........");
 	}
 	
 
